@@ -6,6 +6,7 @@ import NavbarComponent from "./components/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import FooterComponent from "./components/Footer";
+import SigninPage from "./pages/Signin";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 					<Routes>
 						<Route element={<HomePage />} path="/" />
 						<Route element={<AboutPage />} path="/about" />
+						<Route element={<SigninPage />} path="/signin" />
 
 						<Route element={<NotFound />} path="*" />
 					</Routes>
