@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 function Engineering() {
   return (
@@ -10,7 +11,7 @@ function Engineering() {
         <Card.Text>
         "Precision meets innovation in our engineering realm. From designing structures that touch the sky to crafting intricate solutions for complex challenges, our engineers are the architects of tomorrow."
         </Card.Text>
-        <Button variant="primary">Check it out</Button>
+        <Button as={Link} variant="primary" to="/jobs">Check it out</Button>
       </Card.Body>
     </Card>
   );

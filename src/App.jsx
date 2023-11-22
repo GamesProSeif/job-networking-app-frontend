@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import FooterComponent from "./components/Footer";
 import SigninPage from "./pages/Signin";
 import SignUpPage from "./pages/SignUp";
+import JobsPage from "./pages/Jobs";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 						<Route element={<AboutPage />} path="/about" />
 						<Route element={<SigninPage />} path="/signin" />
 						<Route element={<SignUpPage />} path="/signUp" />
+						<Route element={<JobsPage />} path="/jobs" />
 
 						<Route element={<NotFound />} path="*" />
 					</Routes>
