@@ -4,5 +4,5 @@ A project for university - web application to mock LinkedIn
 
 Developed by:
 - Amr Kamoun
-- Salah Elshafie
+- Salah Elshafey
 - Seif Mansour
