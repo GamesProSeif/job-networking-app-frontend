@@ -11,6 +11,7 @@ export default function NavbarComponent() {
 						<Nav.Link href="/">Home</Nav.Link>
 						<Nav.Link href="/about">About</Nav.Link>
 						<Button variant="secondary" href="/signin">Sign in</Button>
+						<Button variant="secondary" href="/signup">Sign Up</Button>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>

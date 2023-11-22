@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import FooterComponent from "./components/Footer";
 import SigninPage from "./pages/Signin";
+import SignUpPage from "./pages/SignUp";
 
 function App() {
 	return (
@@ -17,8 +18,10 @@ function App() {
 				<Container>
 					<Routes>
 						<Route element={<HomePage />} path="/" />
+						
 						<Route element={<AboutPage />} path="/about" />
 						<Route element={<SigninPage />} path="/signin" />
+						<Route element={<SignUpPage />} path="/signUp" />
 
 						<Route element={<NotFound />} path="*" />
 					</Routes>
