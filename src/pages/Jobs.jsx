@@ -6,7 +6,7 @@ function JobsPage() {
 		<>
 			<h1 className="mb-4">Jobs</h1>
 
-			<FormControl className="mb-3" placeholder="Search jobs" />
+			<FormControl className="mb-3 shadow" placeholder="Search jobs" />
 
 			<Stack gap={3}>
 				<JobComponent />

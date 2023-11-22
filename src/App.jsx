@@ -9,10 +9,16 @@ import FooterComponent from "./components/Footer";
 import SigninPage from "./pages/Signin";
 import SignUpPage from "./pages/SignUp";
 import JobsPage from "./pages/Jobs";
+import JobPage from "./pages/Job";
+import CompanyPage from "./pages/Company";
+import PrivacyPolicyPage from "./pages/PrivacyPolicy";
+import ScrollToTop from "./components/ScrollToTop";
+import UserPage from "./pages/User";
 
 function App() {
 	return (
 		<BrowserRouter>
+			<ScrollToTop />
 			<div className="d-flex flex-column vh-100">
 				<NavbarComponent />
 				<div style={{ marginTop: "5em" }} />
@@ -21,14 +27,18 @@ function App() {
 						<Route element={<HomePage />} path="/" />
 						
 						<Route element={<AboutPage />} path="/about" />
+						<Route element={<PrivacyPolicyPage />} path="/privacypolicy" />
 						<Route element={<SigninPage />} path="/signin" />
 						<Route element={<SignUpPage />} path="/signUp" />
 						<Route element={<JobsPage />} path="/jobs" />
+						<Route element={<JobPage />} path="/jobs/:jobid" />
+						<Route element={<CompanyPage />} path="/company/:companyid" />
+						<Route element={<UserPage />} path="/user/:userid" />
 
 						<Route element={<NotFound />} path="*" />
 					</Routes>
 				</Container>
-				<div className="flex-fill mt-auto" />
+				<div className="flex-fill mt-auto mb-4" />
 				<FooterComponent />
 			</div>
 		</BrowserRouter>

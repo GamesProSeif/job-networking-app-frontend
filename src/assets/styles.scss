@@ -113,3 +113,18 @@ video{
 	}
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+.job-card {
+	transition: 0.3s ease;
+}
+
+.job-card:hover {
+	transform: translateY(-5px);
+}
+
+a {
+	text-decoration: none;
+}
