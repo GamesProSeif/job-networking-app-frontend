@@ -1,5 +1,6 @@
 // import Video from "../components/Video";
 import Engineering from "../components/Engineering";
+import { Row, Col } from "react-bootstrap";
 // import bag from "../components/articles";
 
 function HomePage() {
@@ -20,13 +21,23 @@ function HomePage() {
 			<bag />
 			<hr />
 			<p>
-				We&apos;re unlocking community knowledge in a new way. Experts add
-				insights directly into each article, started with the help of
-				AI.
+				We&apos;re unlocking community knowledge in a new way. Experts
+				add insights directly into each article, started with the help
+				of AI.
 			</p>
 			<hr></hr>
 			<h1>Find the right job or internship for you</h1>
-			<Engineering />
+			<Row>
+				<Col>
+					<Engineering />
+				</Col>
+				<Col>
+					<Engineering />
+				</Col>
+				<Col>
+					<Engineering />
+				</Col>
+			</Row>
 			<hr />
 			<h1>Find the top software resources.</h1>
 			<hr />
@@ -38,7 +49,6 @@ function HomePage() {
 				LinkedIn community that you are seeking new chances for
 				employment by using the Open To Work tool.
 			</p>
-
 		</>
 	);
 }
