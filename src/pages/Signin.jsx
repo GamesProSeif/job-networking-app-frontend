@@ -1,28 +1,45 @@
-import { Button, Card, Form, FormControl, FormLabel, Stack } from "react-bootstrap";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { Component } from "react";
+export default class Login extends Component {
+    render() {
+        return (
+            <form>
+                <h3>Sign In</h3>
 
-function SigninPage() {
-	return (
-		<div className="d-flex justify-content-center">
-			<Card className="w-100 w-lg-50 shadow">
-				<Card.Header as="h4">Sign In</Card.Header>
-				<Card.Body>
-					<Form>
-						<Stack gap={2} className="mb-3">
-							<Form.Group>
-								<FormLabel>Email</FormLabel>
-								<FormControl placeholder="Enter email" />
-							</Form.Group>
-							<Form.Group>
-								<FormLabel>Password</FormLabel>
-								<FormControl placeholder="Enter password" type="password" />
-							</Form.Group>
-						</Stack>
-						<Button variant="primary" className="w-100">Sign In</Button>
-					</Form>
-				</Card.Body>
-			</Card>
-		</div>
-	);
+                <div className="mb-3">
+                    <label>Email address</label>
+                    <input
+                        type="email"
+                        className="form-control"
+                        placeholder="Enter email"
+                    />
+                </div>
+                <div className="mb-3">
+                    <label>Password</label>
+                    <input
+                        type="password"
+                        className="form-control"
+                        placeholder="Enter password"
+                    />
+                </div>
+                <div className="mb-3">
+                    <div className="custom-control custom-checkbox">
+                        <input
+                            type="checkbox"
+                            className="custom-control-input"
+                            id="customCheck1"
+                        />
+                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                    </div>
+                </div>
+                <div className="d-grid">
+                    <button type="submit" className="btn btn-primary">Submit</button>
+                </div>
+                <p className="forgot-password text-right">
+                     <a href="#">Forgot password?</a>
+                </p>
+            </form>
+        );
+    }
 }
 
-export default SigninPage;
