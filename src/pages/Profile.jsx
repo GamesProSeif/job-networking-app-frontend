@@ -22,6 +22,7 @@ function ProfilePage() {
 			{
 				user ?
 					<>
+						<h2>{ user.NAME }</h2>
 						<h3>Reset your password</h3>
 						<form action="http://localhost:5000/reset-password" method="post">
 							<label htmlFor="new_password">New Password</label>
