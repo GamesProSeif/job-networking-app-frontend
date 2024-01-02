@@ -14,6 +14,7 @@ import CompanyPage from "./pages/Company";
 import PrivacyPolicyPage from "./pages/PrivacyPolicy";
 import ScrollToTop from "./components/ScrollToTop";
 import UserPage from "./pages/User";
+import ProfilePage from "./pages/Profile";
 
 function App() {
 	return (
@@ -34,6 +35,7 @@ function App() {
 						<Route element={<JobPage />} path="/jobs/:jobid" />
 						<Route element={<CompanyPage />} path="/company/:companyid" />
 						<Route element={<UserPage />} path="/user/:userid" />
+						<Route element={<ProfilePage />} path="/profile" />
 
 						<Route element={<NotFound />} path="*" />
 					</Routes>
